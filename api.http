@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Summit",
+    "title": "Unite Summit 2",
     "details": "Um evento para quem é apaixonado por programação.",
     "maximumAttendees": 100
 }
+
+###
+
+POST http://localhost:3333/events/ef125559-9dd0-4e0e-b7fd-7860cb79a06b/attendee
+Content-Type: application/json
+
+{
+    "name": "Neander de Souza Faria",
+    "email": "neander.faria@hotmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/f4ca657c-e7f1-413d-a5d0-de199b937eea
+
+### 
+
+GET http://localhost:3333/attendees/12/badge
