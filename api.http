@@ -9,12 +9,12 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3333/events/ef125559-9dd0-4e0e-b7fd-7860cb79a06b/attendee
+POST http://localhost:3333/events/f4ca657c-e7f1-413d-a5d0-de199b937eea/attendee
 Content-Type: application/json
 
 {
-    "name": "Neander de Souza Faria",
-    "email": "neander.faria@hotmail.com"
+    "name": "Matheus Marinho",
+    "email": "matheus.marinhodsp@gmail.com"
 }
 
 ###
