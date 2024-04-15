@@ -8,6 +8,10 @@ Os participantes inscritos podem emitir uma credencial para check-in no dia do e
 
 O sistema fará um scan da credencial do participante para permitir a entrada no evento.
 
+## Tecnologias Utilizadas
+
+- Typescript, Fastify, Prisma, Zod.
+
 ## Requisitos
 
 ### Requisitos funcionais
@@ -25,6 +29,28 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 - [x] O participante só pode se inscrever em eventos com vagas disponíveis;
 - [x] O participante só pode realizar check-in em um evento uma única vez;
 
-### Requisitos não-funcionais
+## Rotas
 
-- [ ] O check-in no evento será realizado através de um QRCode;
+O pass.in possui uma certa variedade de rotas que garantem seu funcionamento corretamente, são elas rotas para criação de eventos e realização de check-in, além de também retornarem informações sendo dos frequentantes do evento, informações do próprio evento, entre outras.
+
+![alt text](./images/image.png)
+
+É possível acessar as informações e seus detalhes exemplicados na imagem acima através da rota .../docs da aplicação, por lá é possível realizar testes as rotas bem como visualizar a entrada esperada e o retorno de cada uma das rotas.
+
+## Como utilizar a aplicação
+
+Caso deseje utilizar a aplicação localmente, basta realizar o clone do projeto por meio do comando
+`git clone git@github.com:matheusnff85/nlw-unite-nodejs.git`.
+
+Após realizado o processo, basta via terminal na pasta raiz do projeto utilizar o comando `npm install` para instalar suas dependencias.
+
+Agora renomeie o arquivo `.env.example` para somente `.env` e use o comando `npm run build` após utilizado use `npm start` para iniciar a aplicação.
+
+Com isso a aplicação estará funcionando, basta utilizar o comando `npx prisma db seed` caso deseje preencher o banco de dados com um evento e participantes ficticios, e caso também deseje ter uma visualização melhor dos dados preenchidos na tabela também como poder manipular os mesmos, basta utilizar o comando `npm run db:studio` em um terminal disponível.
+
+Será aberta a visualização abaixo:
+
+![alt text](/images/studio-1.png)
+![alt text](/images/studio-2.png)
+
+# Desenvolvido por: [Matheus Marinho](https://www.linkedin.com/in/matheus-marinhodsp/).
